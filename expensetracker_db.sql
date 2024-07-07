@@ -29,6 +29,7 @@ create table et_transactions(
     category_id integer not null,
     user_id integer not null,
     amount numeric(10,2) not null,
+    note varchar(50) not null,
     transaction_date bigint not null
 );
 alter table et_transactions add constraint trans_cat_fk
